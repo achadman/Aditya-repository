@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;  
+    list-style: none;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('https://img.freepik.com/free-photo/stylish-scandinavian-living-room-with-design-mint-sofa-furnitures-mock-up-poster-map-plants-eleg_1258-152143.jpg?w=900&t=st=1705025902~exp=1705026502~hmac=45ae4d8cae96b493d95d3cd76a46c5e0522d88a08b43c9766af5bbc5d989714f');
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    padding-top: 20px;
+    width: 85%;
+    margin: auto;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+
+}
+.logo{
+    cursor: pointer;
+    width: 70px;
+}
+.navbar ul li{
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+} 
+.navbar ul li a{
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #61A3BA;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.section  {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.section h1{
+    margin-top: 80px;
+    font-size: 70px;
+    font-weight: 700;
+}
+.section p{
+    margin: auto;
+    line-height: 25px;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+button {
+    width: 200px;
+    font-size: 14px;
+    background: transparent;
+    border-radius: 25px;
+    margin: 20px 10px;
+    padding: 15px 0;
+    border: 2px solid #61A3BA;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    color: #fff;
+    position: relative;
+}
+
+span{
+    border-radius: 25px;
+    z-index: -1;
+    background: #61A3BA ;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.footer{
+    width: 100%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly   ;
+    background: #252B42;
+color: white;
+ font-size: 14px;
+ font-family: Montserrat;
+ font-weight: 700;
+ line-height: 24px;
+ letter-spacing: 0.20px;
+ word-wrap: break-word;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+
+}
+.footer ul li{
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+} 
+.footer ul li a{
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    text-transform: uppercase;
+}
